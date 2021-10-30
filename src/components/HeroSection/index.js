@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HeroBg, HeroContainer, VideoBg, HeroContent, HeroHeader, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './herosection.styled';
+import {Button} from './../button.styled';
 import Video from "./../../public/video/video.mp4";
 
 const HeroSection = () => {
@@ -16,11 +17,16 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroHeader>Phone care and Repairs</HeroHeader>
-                <HeroP>Professional Specialists in smartphone repair.</HeroP>
+                <HeroP>Professional technicians specialized in complete phone care for all forms of smartphone devices. We believe in good communication and relationship building with our clients.</HeroP>
+                <HeroBtnWrapper>
+                    <Button to="/signup" 
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                    primary={true}
+                    dark={true}
+                    >Get served {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                </HeroBtnWrapper>
             </HeroContent>
-            <HeroBtnWrapper>
-                <Button to="/signup" onMouseEnter={onHover} onMouseLeave={onHover}>Get started {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
-            </HeroBtnWrapper>
         </HeroContainer>
     )
 }
