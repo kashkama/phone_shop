@@ -2,9 +2,9 @@ import Iphone from "./../../public/images/logo5.jpg";
 
 export const homeObjOne = {
     id: "about",
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Quality Phone Service',
     headLine: 'Deals with all types of smartphones',
     description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
@@ -12,17 +12,17 @@ export const homeObjOne = {
     imgStart: false,
     img: Iphone,
     alt: "phone services",
-    dark: true,
+    dark: false,
     dark2: false,
-    primary: true,
-    darkText: false
+    primary: false,
+    darkText: true
 };
 
 export const homeObjTwo = {
     id: "discover",
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'Professional Technicians',
     headLine: 'Deals with all types of smartphones',
     description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
@@ -30,17 +30,17 @@ export const homeObjTwo = {
     imgStart: true,
     img: Iphone,
     alt: "technicians",
-    dark: false,
+    dark: true,
     dark2: false,
-    primary: false,
-    darkText: true
+    primary: true,
+    darkText: false
 }
 
 export const homeObjThree = {
     id: "signup",
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Join our community',
     headLine: 'Deals with all types of smartphones',
     description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
@@ -48,8 +48,8 @@ export const homeObjThree = {
     imgStart: false,
     img: Iphone,
     alt: "signup",
-    dark: true,
+    dark: false,
     dark2: false,
-    primary: true,
-    darkText: false
+    primary: false,
+    darkText: true
 }
