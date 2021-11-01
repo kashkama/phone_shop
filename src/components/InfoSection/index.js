@@ -5,7 +5,7 @@ import { Button } from './../button.styled';
 const InfoSection = ({ id, lightBg, lightText, lightTextDesc, topLine, headLine, description, buttonLabel, imgStart, img, alt, dark, dark2, primary, darkText }) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg}>
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>

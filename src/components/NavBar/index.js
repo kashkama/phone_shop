@@ -11,7 +11,7 @@ export const NavBar = ({toggle}) => {
                 <MobileIcon onClick={toggle}><FaBars/></MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="/about">About</NavLinks>
+                        <NavLinks to="about">About</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="discover">Discover</NavLinks>
@@ -20,7 +20,7 @@ export const NavBar = ({toggle}) => {
                         <NavLinks to="services">Services</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="signup">Sign Up</NavLinks>
+                        <NavLinks to="/signup">Sign Up</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
