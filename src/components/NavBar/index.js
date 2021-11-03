@@ -32,16 +32,38 @@ export const NavBar = ({ toggle }) => {
                         <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavLinks>
+                                <NavLinks
+                                    to="about" smooth={true}
+                                    duration={500} spy={true}
+                                    exact='true'
+                                    offset={-80}>about us</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="discover" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Discover</NavLinks>
+                                <NavLinks
+                                    to="what we do"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>what we do</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
+                                <NavLinks
+                                    to="why us"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>why us</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="signup" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLinks>
+                                <NavLinks
+                                    to="services"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>services</NavLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>

@@ -1,11 +1,13 @@
 import React from 'react'
 import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './services.styled'
-import Iphone from "../../public/images/logo5.jpg";
+import Android from "../../public/images/android.svg";
+import Iphone from "../../public/images/iphone.svg";
 
-const ServicesCardComp = ({img, heading, paragraph}) => {
+
+const ServicesCardComp = ({ img, heading, paragraph }) => {
     return (
         <ServicesCard>
-            <ServicesIcon src={img}/>
+            <ServicesIcon src={img} />
             <ServicesH2>{heading}</ServicesH2>
             <ServicesP>{paragraph}</ServicesP>
         </ServicesCard>
@@ -13,16 +15,18 @@ const ServicesCardComp = ({img, heading, paragraph}) => {
 }
 
 const Services = () => {
-    const heading1 = "paragraphparagraphparag"
-    const paragraph1 = "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Rutrum eni ipsum mus posuere egestas nisl dignissim felis. Purus rhoncus magna parturient vehicula felis euismod ad netus amet. Sem potenti non cubilia ante et pulvinar natoque primis augue quisque euismod mus vestibulum lacus. Arcu a purus magna velit magnis metus"
+    const [heading1, heading2, heading3, paragraph1, paragraph2, paragraph3] = ["Android Repair", "Iphone Repair", "Tablet Repair",
+        "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of android devices including samsung, oneplus, xiaomi, vivo.",
+         "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of iphone devices including iphone 4 to iphone 13.",
+          "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of tablet devices including ipads."];
     return (
         <>
             <ServicesContainer id="services">
                 <ServicesH1>Our Services</ServicesH1>
                 <ServicesWrapper>
-                    <ServicesCardComp img={Iphone} heading={heading1} paragraph={paragraph1}/>
-                    <ServicesCardComp img={Iphone} heading="Affordable Prices" paragraph={paragraph1}/>
-                    <ServicesCardComp img={Iphone} heading="Affordable Prices" paragraph={paragraph1}/>
+                    <ServicesCardComp img={Android} heading={heading1} paragraph={paragraph1} />
+                    <ServicesCardComp img={Iphone} heading={heading2} paragraph={paragraph2} />
+                    <ServicesCardComp img={Android} heading={heading3} paragraph={paragraph3} />
                 </ServicesWrapper>
             </ServicesContainer>
         </>

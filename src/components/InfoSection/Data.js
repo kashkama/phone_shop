@@ -1,4 +1,6 @@
 import Iphone from "./../../public/images/logo5.jpg";
+import All from "./../../public/images/all.jpg";
+import Issues from "./../../public/images/issues.png";
 
 export const homeObjOne = {
     id: "about",
@@ -6,11 +8,11 @@ export const homeObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Quality Phone Service',
-    headLine: 'Deals with all types of smartphones',
-    description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
+    headLine: 'We deal with all types of smartphones and tablets.',
+    description: 'Get quality smartphone services for apple, android and blackberry smartphones and tablets at affordable fee.',
     buttonLabel: 'Get A Quote',
     imgStart: false,
-    img: Iphone,
+    img: All,
     alt: "phone services",
     dark: false,
     dark2: false,
@@ -19,17 +21,17 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: "discover",
+    id: "what we do",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Professional Technicians',
-    headLine: 'Deals with all types of smartphones',
-    description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
+    topLine: 'What we fix?',
+    headLine: 'We fix all smartphone issues.',
+    description: 'Craked screen, Water damage, Spoilt charging ports, Speaker or earpiece not working, Broken buttons, connection issue and more...',
     buttonLabel: 'Learn More',
     imgStart: true,
-    img: Iphone,
-    alt: "technicians",
+    img: Issues,
+    alt: "issues we fix",
     dark: true,
     dark2: false,
     primary: true,
@@ -37,17 +39,17 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
-    id: "signup",
+    id: "why us",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Join our community',
-    headLine: 'Deals with all types of smartphones',
-    description: 'Get quality smartphone services for apple, android and blackberry devices at affordable price',
+    topLine: 'Why customers trust us',
+    headLine: 'Our technicians believe in relationship building with our customers.',
+    description: 'We offer free diagnostics, low fee guarantee, quick fix, Can fix your device on standby.',
     buttonLabel: 'Start Now',
     imgStart: false,
     img: Iphone,
-    alt: "signup",
+    alt: "why us",
     dark: false,
     dark2: false,
     primary: false,
