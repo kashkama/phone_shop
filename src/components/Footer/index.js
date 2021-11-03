@@ -1,8 +1,12 @@
 import React from 'react'
 import {FaFacebook, FaInstagram} from 'react-icons/fa'
+import { animateScroll } from 'react-scroll';
 import { FooterContainer, FooterWrapper, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialWrapper, SocialLogo, SocialIcons, SocialIconLink, WebSiteRights } from './footer.styled';
 
 const Footer = () => {
+    const scrollHome = () => {
+        animateScroll.scrollToTop();
+    }
     return (
         <FooterContainer>
             <FooterWrapper>
@@ -17,7 +21,7 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialWrapper>
-                        <SocialLogo to="/">AARepairshop</SocialLogo>
+                        <SocialLogo to="/" onClick={scrollHome}>AARepairshop</SocialLogo>
                         <WebSiteRights>aarepairshop &copy; {new Date().getFullYear()} All rights reserved.</WebSiteRights>
                         <SocialIcons>
                             <SocialIconLink href="https://web.facebook.com/aarepairshop" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><FaFacebook/></SocialIconLink>

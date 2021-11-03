@@ -33,13 +33,17 @@ export const InfoContainer = styled.div`
  `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     padding: 0 15px;
     grid-area: col1;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+    }
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     padding: 0 15px;
     grid-area: col2;
 `
