@@ -4,6 +4,8 @@ import Issues from "./../../public/images/issues.png";
 
 export const homeObjOne = {
     id: "about",
+    purpose: "nav",
+    to: "devices",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -22,6 +24,8 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
     id: "what we do",
+    purpose: "nav",
+    to: "/",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -40,6 +44,7 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
     id: "why us",
+    purpose: "scroll",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,

@@ -9,7 +9,7 @@ const Devices = () => {
                     <DevicesHeader>Devices</DevicesHeader>
                     <DevicesListWrapper>
                         <DevicesList>
-                            <Device></Device>
+                            <Device>one</Device>
                         </DevicesList>
                     </DevicesListWrapper>
                 </DevicesSection>
