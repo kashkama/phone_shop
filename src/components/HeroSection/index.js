@@ -16,15 +16,16 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted type="video/mp4" src={Video}/>
             </HeroBg>
             <HeroContent>
-                <HeroHeader>Phone Care And Repairs Services</HeroHeader>
-                <HeroP>Professional technicians specialized in complete phone care for all forms of smartphone devices. We believe in good communication and relationship building with our clients.</HeroP>
+                <HeroHeader>Smartphone Care And Repairs Services</HeroHeader>
+                <HeroP>Professional technicians specialized in complete smartphone care for all forms of devices. We believe in good communication and relationship building with our clients.</HeroP>
                 <HeroBtnWrapper>
-                    <Button to="/signup" 
+                    <Button 
+                    to="services" 
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
                     dark="true"
-                    >Get all service {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                    >our services {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

@@ -18,7 +18,7 @@ const Services = () => {
     const [heading1, heading2, heading3, paragraph1, paragraph2, paragraph3] = ["Android Repair", "Iphone Repair", "Tablet Repair",
         "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of android devices including samsung, oneplus, xiaomi, vivo.",
          "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of iphone devices including iphone 4 to iphone 13.",
-          "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of tablet devices including ipads."];
+          "We offer a professional service to ensure that your phone gets fixed without any hassles. We use all the latest tools and equipments to carry out repairs. We repair all brands of android tablet devices including apple ipads."];
     return (
         <>
             <ServicesContainer id="services">

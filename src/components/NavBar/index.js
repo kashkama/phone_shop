@@ -25,8 +25,8 @@ export const NavBar = ({ toggle }) => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: 'green' }}>
-                <Nav scrollNav={scrollNav}>
+            <IconContext.Provider value={{ color: '#fff' }}>
+                <Nav scrollNav={scrollNav} role="navigation">
                     <NavContainer>
                         <NavLogo to="/" onClick={scrollHome}>aarepairshop</NavLogo>
                         <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
@@ -67,7 +67,7 @@ export const NavBar = ({ toggle }) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="/getQuote">Get Quote</NavBtnLink>
+                            <NavBtnLink to="/getQuote">Get A Quote</NavBtnLink>
                         </NavBtn>
                     </NavContainer>
                 </Nav>

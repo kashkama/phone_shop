@@ -10,7 +10,7 @@ export const homeObjOne = {
     topLine: 'Quality Phone Service',
     headLine: 'We deal with all types of smartphones and tablets.',
     description: 'Get quality smartphone services for apple, android and blackberry smartphones and tablets at affordable fee.',
-    buttonLabel: 'Get A Quote',
+    buttonLabel: 'Learn More',
     imgStart: false,
     img: All,
     alt: "phone services",
