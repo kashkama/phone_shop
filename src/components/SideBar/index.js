@@ -10,7 +10,7 @@ const SideBar = ({ isOpen, toggle }) => {
                 <CloseIcon />
             </Icon>
             <SideBarWrapper>
-                <SideBarMenu>
+                <SideBarMenu pathname={pathname}>
                     {pathname === "/" && <SideBarLink to="about" onClick={toggle}>about us</SideBarLink>}
                     {pathname === "/" && <SideBarLink to="what we do" onClick={toggle}>what we do</SideBarLink>}
                     {pathname === "/" && <SideBarLink to="why us" onClick={toggle}>why us</SideBarLink>}

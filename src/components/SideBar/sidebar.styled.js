@@ -36,7 +36,7 @@ export const SideBarWrapper = styled.div`
 `;
 
 export const SideBarMenu = styled.ul`
-    display: grid;
+    display: ${({pathname}) => (pathname === "/" ? 'grid' : 'none')};
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
