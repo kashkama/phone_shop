@@ -5,7 +5,7 @@ import {Link as LinkScroll} from 'react-scroll';
 export const Nav = styled.nav`
     position: sticky;
     display: flex;
-    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background: ${({scrollNav, pathname}) => (scrollNav ? '#000' : pathname === '/' ? 'transparent' : '#000')};
     justify-content: center;
     align-items: center;
     height: 80px;
@@ -57,7 +57,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
-    display: flex;
+    display: ${({pathname}) => (pathname === '/'? 'flex': 'none')};
     align-items: center;
     list-style: none;
     text-align: center;

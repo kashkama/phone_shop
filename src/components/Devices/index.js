@@ -9,7 +9,7 @@ const Devices = () => {
                     <DevicesHeader>Devices</DevicesHeader>
                     <DevicesListWrapper>
                         <DevicesList>
-                            <Device>one</Device>
+                            {new Array(20).fill(null).map((i) => (<Device key={i}>one</Device>))}
                         </DevicesList>
                     </DevicesListWrapper>
                 </DevicesSection>
