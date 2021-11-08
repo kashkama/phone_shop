@@ -1,6 +1,19 @@
 import Iphone from "./../../public/images/logo5.jpg";
 import All from "./../../public/images/all.jpg";
 import Issues from "./../../public/images/issues.png";
+import samsung from "../../public/images/samsung.svg";
+import apple from "../../public/images/apple.svg";
+import xiaomi from "../../public/images/xiaomi.svg";
+import lenovo from "../../public/images/lenovo.svg";
+import lg from "../../public/images/lg.svg";
+import htc from "../../public/images/htc.svg";
+import huawei from "../../public/images/huawei.svg";
+import vivo from "../../public/images/vivo.svg";
+import blackberry from "../../public/images/blackberry.svg";
+import asus from "../../public/images/asus.svg";
+import oppo from "../../public/images/oppo.svg";
+import moto from "../../public/images/moto.svg";
+import tecno from "../../public/images/tecno.svg";
 
 export const homeObjOne = {
     id: "about",
@@ -60,3 +73,58 @@ export const homeObjThree = {
     primary: false,
     darkText: true
 }
+
+export const devices = [
+    {
+        name: "samsung",
+        icon: samsung
+    },
+    {
+        name: "apple",
+        icon: apple
+    },
+    {
+        name: "xiaomi",
+        icon: xiaomi
+    },
+    {
+        name: "htc",
+        icon: htc
+    },
+    {
+        name: "vivo",
+        icon: vivo
+    },
+    {
+        name: "asus",
+        icon: asus
+    },
+    {
+        name: "blackberry",
+        icon: blackberry
+    },
+    {
+        name: "oppo",
+        icon: oppo
+    },
+    {
+        name: "lenovo",
+        icon: lenovo
+    },
+    {
+        name: "lg",
+        icon: lg
+    },
+    {
+        name: "huawei",
+        icon: huawei
+    },
+    {
+        name: "motorolla",
+        icon: moto
+    },
+    {
+        name: "tecno",
+        icon: tecno
+    }
+]

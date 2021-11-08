@@ -1,15 +1,16 @@
 import React from 'react'
-import { DevicesContainer, DevicesWrapper, DevicesSection, DevicesHeader, DevicesListWrapper, DevicesList, Device } from './devices.styled';
+import { DevicesContainer, DevicesWrapper, DevicesSection, DevicesHeader, DevicesListWrapper, DeviceImg, DevicesList, Device } from './devices.styled';
+import { devices } from '../InfoSection/Data';
 
 const Devices = () => {
     return (
         <DevicesContainer>
             <DevicesWrapper>
                 <DevicesSection>
-                    <DevicesHeader>Devices</DevicesHeader>
+                    <DevicesHeader>We fix...</DevicesHeader>
                     <DevicesListWrapper>
                         <DevicesList>
-                            {new Array(20).fill(null).map((i) => (<Device key={i}>one</Device>))}
+                            {devices.map((dv) => (<Device key={dv.name}><DeviceImg src={dv.icon}/></Device>))}
                         </DevicesList>
                     </DevicesListWrapper>
                 </DevicesSection>

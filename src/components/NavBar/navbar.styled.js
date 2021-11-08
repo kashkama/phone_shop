@@ -9,7 +9,7 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     height: 80px;
-    margin-top: -80px;
+    margin-top: ${({pathname}) => (pathname === '/' ? '-80px' : '0')};
     font-size: 1rem;
     top: 0;
     z-index: 10;
