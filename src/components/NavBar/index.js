@@ -19,6 +19,8 @@ export const NavBar = ({ toggle }) => {
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
+        //cancel subscription
+        return () => window.removeEventListener('scroll', changeNav)
     }, []);
 
     const scrollHome = () => {
