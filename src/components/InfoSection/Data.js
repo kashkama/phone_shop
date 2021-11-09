@@ -24,7 +24,7 @@ export const homeObjOne = {
     lightTextDesc: false,
     topLine: 'Quality Phone Service',
     headLine: 'We deal with all types of smartphones and tablets.',
-    description: 'Get quality smartphone services for apple, android and blackberry smartphones and tablets at affordable fee.',
+    description: 'Get quality smartphone services for apple, android, blackberry and more smartphones at affordable fee.',
     buttonLabel: 'Learn More',
     imgStart: false,
     img: All,

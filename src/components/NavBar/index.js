@@ -71,7 +71,7 @@ export const NavBar = ({ toggle }) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="/getQuote">Get A Quote</NavBtnLink>
+                            <NavBtnLink to="/quote">Get A Quote</NavBtnLink>
                         </NavBtn>
                     </NavContainer>
                 </Nav>

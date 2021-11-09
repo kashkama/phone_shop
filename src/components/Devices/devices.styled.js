@@ -64,6 +64,7 @@ export const Device = styled.li`
 export const DeviceImg = styled.img`
     height: 100px;
     width: 100px;
+    object-fit: fill;
 
     @media screen and (max-width: 480px) {
         height: 80px;
