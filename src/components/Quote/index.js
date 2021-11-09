@@ -1,17 +1,17 @@
 import React from 'react'
-import { QuoteButton, QuoteContainer, QuoteWrapper, Back, QuoteH1, QuoteForm, QuoteLabel, QuoteInput} from './quote.styled';
+import { QuoteButton, QuoteContainer, QuoteWrapper, Back, QuoteH1, QuoteForm, QuoteLabel, QuoteInput } from './quote.styled';
 const Quote = () => {
     return (
         <QuoteContainer>
             <QuoteWrapper>
                 <Back>go back</Back>
-                <QuoteH1>get a quote</QuoteH1>
                 <QuoteForm>
+                    <QuoteH1>get a quote</QuoteH1>
                     <QuoteLabel>phone</QuoteLabel>
-                    <QuoteInput/>
+                    <QuoteInput type='text' required />
                     <QuoteLabel>message</QuoteLabel>
-                    <QuoteInput/>
-                    <QuoteButton>submit</QuoteButton>
+                    <QuoteInput type='text' required />
+                    <QuoteButton type='submit'>submit</QuoteButton>
                 </QuoteForm>
             </QuoteWrapper>
         </QuoteContainer>
