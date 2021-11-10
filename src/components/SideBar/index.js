@@ -11,13 +11,13 @@ const SideBar = ({ isOpen, toggle }) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu pathname={pathname}>
-                    {pathname === "/" && <SideBarLink to="about" onClick={toggle}>about us</SideBarLink>}
-                    {pathname === "/" && <SideBarLink to="what we do" onClick={toggle}>what we do</SideBarLink>}
-                    {pathname === "/" && <SideBarLink to="why us" onClick={toggle}>why us</SideBarLink>}
-                    {pathname === "/" && <SideBarLink to="services" onClick={toggle}>services</SideBarLink>}
+                    <SideBarLink to="about" onClick={toggle}>about us</SideBarLink>
+                    <SideBarLink to="what we do" onClick={toggle}>what we do</SideBarLink>
+                    <SideBarLink to="why us" onClick={toggle}>why us</SideBarLink>
+                    <SideBarLink to="services" onClick={toggle}>services</SideBarLink>
                 </SideBarMenu>
                 <SideBarBtnWrapper>
-                    <SideBarBtnLink to="/getQuote" onClick={toggle}>Get A Quote</SideBarBtnLink>
+                    <SideBarBtnLink to="/quote" onClick={toggle}>Get A Quote</SideBarBtnLink>
                 </SideBarBtnWrapper>
             </SideBarWrapper>
         </SideBarContainer>

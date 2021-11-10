@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { QuoteButton, QuoteContainer, QuoteWrapper, Back, QuoteH1, QuoteForm, QuoteLabel, QuoteInput, QuoteTextArea } from './quote.styled';
+
 const Quote = () => {
+    const history = useHistory();
+
     return (
         <QuoteContainer>
             <QuoteWrapper>
-                <Back>go back</Back>
+                <Back onClick={() => history.goBack()}>go back</Back>
                 <QuoteForm>
                     <QuoteH1>get a quote</QuoteH1>
                     <QuoteLabel>name</QuoteLabel>
