@@ -1,5 +1,5 @@
 import React from 'react'
-import { QuoteButton, QuoteContainer, QuoteWrapper, Back, QuoteH1, QuoteForm, QuoteLabel, QuoteInput } from './quote.styled';
+import { QuoteButton, QuoteContainer, QuoteWrapper, Back, QuoteH1, QuoteForm, QuoteLabel, QuoteInput, QuoteTextArea } from './quote.styled';
 const Quote = () => {
     return (
         <QuoteContainer>
@@ -7,10 +7,12 @@ const Quote = () => {
                 <Back>go back</Back>
                 <QuoteForm>
                     <QuoteH1>get a quote</QuoteH1>
+                    <QuoteLabel>name</QuoteLabel>
+                    <QuoteInput type='text' required />
                     <QuoteLabel>phone</QuoteLabel>
-                    <QuoteInput type='text' required />
+                    <QuoteInput type='tel' required />
                     <QuoteLabel>message</QuoteLabel>
-                    <QuoteInput type='text' required />
+                    <QuoteTextArea rows={6} required/>
                     <QuoteButton type='submit'>submit</QuoteButton>
                 </QuoteForm>
             </QuoteWrapper>

@@ -78,6 +78,30 @@ export const QuoteInput = styled.input`
     border-radius: 5px;
     width: 90%;
     height: 55px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.15s ease-in-out;
+
+    &:focus-visible {
+        outline: 2px solid #01bf71;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 480px) {
+        height: 45px;
+    }
+`
+
+export const QuoteTextArea = styled.textarea`
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.15s ease-in-out;
+
+    &:focus-visible {
+        outline: 3px solid #01bf71;
+        border-radius: 5px;
+    }
 `
 
 export const QuoteButton = styled.button`
