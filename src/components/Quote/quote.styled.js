@@ -95,7 +95,7 @@ export const QuoteTextArea = styled.textarea`
     width: 90%;
     border-radius: 5px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
     transition: all 0.15s ease-in-out;
 
     &:focus-visible {
@@ -111,5 +111,6 @@ export const QuoteButton = styled.button`
     background: #01bf71;
     color: #fff;
     font-size: 20px;
+    font-weight: 550;
     cursor: pointer;
 `
