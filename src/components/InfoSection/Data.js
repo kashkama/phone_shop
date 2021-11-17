@@ -38,7 +38,7 @@ export const homeObjOne = {
 export const homeObjTwo = {
     id: "what we do",
     purpose: "nav",
-    to: "/",
+    to: "devices",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

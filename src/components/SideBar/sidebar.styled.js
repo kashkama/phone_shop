@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {FaTimes} from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { Link as LinkRouter } from 'react-router-dom';
-import {Link as LinkScroll} from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const SideBarContainer = styled.aside`
     position: fixed;
@@ -13,8 +13,8 @@ export const SideBarContainer = styled.aside`
     align-items: center;
     left: 0;
     transition: all 0.3s ease-in-out;
-    opacity: ${({isOpen}) => (isOpen ? '100' : '0')};
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+    opacity: ${({ isOpen }) => (isOpen ? '100' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -36,7 +36,7 @@ export const SideBarWrapper = styled.div`
 `;
 
 export const SideBarMenu = styled.ul`
-    display: ${({pathname}) => (pathname === "/" ? 'grid' : 'none')};
+    display: ${({ pathname }) => (pathname === "/" ? 'grid' : 'none')};
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
@@ -63,6 +63,8 @@ export const SideBarLink = styled(LinkScroll)`
         transition: all 0.2s ease-in-out;
     }
 `
+
+export const SideBarLinkTo = styled(SideBarLink)``;
 
 export const SideBarBtnWrapper = styled.div`
     display: flex;

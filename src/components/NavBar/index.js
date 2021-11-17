@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './navbar.styled';
+import { Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavLinksTo } from './navbar.styled';
 import { animateScroll } from 'react-scroll';
 
 export const NavBar = ({ toggle }) => {
@@ -68,6 +69,12 @@ export const NavBar = ({ toggle }) => {
                                     spy={true}
                                     exact='true'
                                     offset={-80}>services</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinksTo
+                                    as={LinkRouter}
+                                    to="/feed"
+                                    >our work</NavLinksTo>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>

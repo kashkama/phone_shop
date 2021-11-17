@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
-import {Link as LinkScroll} from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     position: sticky;
     display: flex;
-    background: ${({scrollNav, pathname}) => (scrollNav ? '#000' : pathname === '/' ? 'transparent' : '#000')};
+    background: ${({ scrollNav, pathname }) => (scrollNav ? '#000' : pathname === '/' ? 'transparent' : '#000')};
     justify-content: center;
     align-items: center;
     height: 80px;
-    margin-top: ${({pathname}) => (pathname === '/' ? '-80px' : '0')};
+    margin-top: ${({ pathname }) => (pathname === '/' ? '-80px' : '0')};
     font-size: 1rem;
     top: 0;
     z-index: 10;
@@ -57,7 +57,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
-    display: ${({pathname}) => (pathname === '/'? 'flex': 'none')};
+    display: ${({ pathname }) => (pathname === '/' ? 'flex' : 'none')};
     align-items: center;
     list-style: none;
     text-align: center;
@@ -85,6 +85,8 @@ export const NavLinks = styled(LinkScroll)`
         border-bottom: 3px solid #01bf71;
     }
 `
+
+export const NavLinksTo = styled(NavLinks)``
 
 export const NavBtn = styled.nav`
     display: flex;
