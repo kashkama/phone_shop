@@ -4,7 +4,7 @@ export const DevicesContainer = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(1150px - 80px);
+    height: auto;
     width: 100%;
     position: relative;
     z-index: 1;
