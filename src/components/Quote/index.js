@@ -10,7 +10,8 @@ const Quote = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(inputs)
+        //add code here to send message to whatsapp
+        console.log(inputs);
     }
     const handleInputs = e => {
         e.persist();
