@@ -11,15 +11,23 @@ export const LocationWrapper = styled.article`
   flex-direction: row;
   height: 100%;
   width: 100%;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
 `;
 
 export const LocationMap = styled.div`
   flex-grow: 2;
   background-color: red;
+
+  @media screen and (max-width: 760px) {
+    flex-grow: 3
+  }
 `;
 
 export const LocationInfo = styled.div`
-  flex-grow: 1;
+  flex-shrink: 1;
   background-color: #101522;
 `;
 
@@ -65,7 +73,7 @@ export const List = styled.div`
   flex-direction: row;
   height: auto;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 `;
 
 
